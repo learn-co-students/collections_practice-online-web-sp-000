@@ -2,6 +2,7 @@ def sort_array_asc(array)
   array.sort
 end
 
+
 def sort_array_desc(array)
   array.sort {|x, y| y <=> x}
 end
@@ -40,7 +41,5 @@ end
 
 
 def add_s(array)
-  array.collect do |word|
-     word == array[1] ? word : word << "s"
-  end
+  array.collect { |word| word == array[1] ? word : word << "s"}
 end
