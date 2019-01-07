@@ -26,16 +26,8 @@ def reverse_array(array)
 array.reverse!
 end
 
-def kesha_maker(array)
-i = 0
-while i < array.length
-  temp = array[i]
-  kesha = "#{temp[0,2]}$#{temp[3,temp.length]}"
-  array.delete_at(i)
-  array.insert(i, kesha)
-  i += 1
-end
-return array
+def kesha_maker(arr)
+  arr.each {|word| word[2]="$"}
 end
 
 def find_a(array)
