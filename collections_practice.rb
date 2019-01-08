@@ -48,11 +48,22 @@ end
 #    return array
 #end
 
-def add_s(array)
-array.each.collect {|word| if !(array[1] == word)
-word+"s"
-else
+#def add_s(array)
+#array.each.collect {|word| if !(array[1] == word)
+#word+"s"
+#else
+#  word
+#end
+#}
+#end
+
+
+
+def add_s(arr)
+  arr.each_with_index.collect {|word, index|
+  if (index == 1)
   word
-end
-}
+else
+word+"s"
+end}
 end
