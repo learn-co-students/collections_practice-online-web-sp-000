@@ -38,12 +38,21 @@ def sum_array(arr)
   arr.inject {|sum, n| sum + n }
 end
 
+#def add_s(array)
+#  i=0
+#    while i < array.length
+#    array[i] << "s"
+#    i +=1
+#    end
+#    array[1] = array[1][0,array[1].length-1]
+#    return array
+#end
+
 def add_s(array)
-  i=0
-    while i < array.length
-    array[i] << "s"
-    i +=1
-    end
-    array[1] = array[1][0,array[1].length-1]
-    return array
+array.each.collect {|word| if !(array[1] == word)
+word+"s"
+else
+  word
+end
+}
 end
