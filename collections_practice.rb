@@ -33,5 +33,11 @@ def find_a(array)
 end 
   
 def sum_array(array)
-  
+  array.inject{|sum, value| sum += value}
 end
+
+def add_s(array)
+  array.collect do |word|
+    word << 's'
+  end 
+end  
