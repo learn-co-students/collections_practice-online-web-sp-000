@@ -16,3 +16,13 @@ def swap_elements(array)
   array[2] = temp
   return array
 end
+
+def reverse_array(array)
+  array.reverse
+end
+
+def kesha_maker(strings)
+    strings.each do |names| names[2]= "$"
+    end
+      return strings
+  end
