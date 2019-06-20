@@ -26,3 +26,17 @@ def kesha_maker(strings)
     end
       return strings
   end
+
+def find_a(array)
+  array.select do |words| words.start_with?("a")
+  end
+end
+
+def sum_array(array)
+  array.inject(0,:+)
+end
+
+def add_s(array)
+  if index == 0 && 2 && 3
+  array.collect{|x| x+"s"}
+end
