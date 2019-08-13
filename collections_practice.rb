@@ -13,7 +13,8 @@ def sort_array_char_count(array)
 end
 
 def swap_elements(array)
-  array[0], array[1], array[2] = array[0], array[2], array[1]
+  array[1], array[2] = array[2], array[1]
+  array
 end
 
 def reverse_array(array)
@@ -21,7 +22,7 @@ def reverse_array(array)
 end
 
 def kesha_maker(array)
-  kesha_array = array.each{|string|
+  array.each {|string|
     string[2] = "$"
   }
 end
@@ -31,6 +32,12 @@ def find_a(array)
     string.start_with?("a")
   }
 end
+
+# using find_all method
+# def find_a(array)
+#   array.find_all do |word|
+#     word[0] == "a"
+#   end
 
 def sum_array(array)
     array.inject {|sum, n|
@@ -43,6 +50,3 @@ def add_s(array)
     element != "feet" ? element << "s" : element = element
   }
 end
-
-array = [1, 2, 3]
-array [0], array[1], array[2] = array[0], array[2], array[1]
