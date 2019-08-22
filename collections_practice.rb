@@ -30,6 +30,12 @@ def sum_array(array)
   array.reduce{|sum, name| sum + name}
 end
 
-
-array=["hand","feet", "knee", "table"]
-array.sort{|a,b| a<<"s"<=>b<<"s"}
+def add_s(array)
+  array.collect do |word|
+    if array[1] == word
+      word
+    else
+      word + "s"
+    end
+  end
+end
