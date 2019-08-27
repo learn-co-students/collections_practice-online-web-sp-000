@@ -1,3 +1,4 @@
+require "pry"
 # sort integers in ascending order
 def sort_array_asc (array)
   array.sort
@@ -37,13 +38,23 @@ def sum_array(array)
   array.inject {|sum, n| sum + n}
 end
 
-def add_s(array)
-  array.each_with_index.collect do |element, index|
-    if index != 1 #THE ELEMENT IS NOT THE SECOND
-    	element[index] << "s"
-	 else
+#def add_s(array)
+  #array.each_with_index.collect do |element, index|
+    #if index != 1 #THE ELEMENT IS NOT THE SECOND
+    	#element[index] << "s"
+	 #else
       	#what do we do here?
-        return array
-    end
-  end
+        #return array
+    #end
+#end
+#end
+
+def add_s(array)
+  array.each_with_index.collect {|element, index| index !=1? element << "s" : element}
+  # if index != 1
+    	#element << "s"
+	 #else
+    #  element
+  #  end
+#  end
 end
