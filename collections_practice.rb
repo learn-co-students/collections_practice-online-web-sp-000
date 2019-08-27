@@ -49,8 +49,8 @@ def add_s(array)
     	element[index] + "s"
 	 else
       	#what do we do here?
-        return element
+        return array
       end
-  end
+    end
   end
 end
