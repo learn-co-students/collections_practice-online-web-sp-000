@@ -39,18 +39,11 @@ end
 
 def add_s(array)
   array.each_with_index.collect do |element, index|
-    #element + "s"
-
-end
-
-def add_s(array)
-  array.each_with_index.collect do |element, index|
     if index != 1 #THE ELEMENT IS NOT THE SECOND
-    	element[index] + "s"
+    	element[index] << "s"
 	 else
       	#what do we do here?
         return array
-      end
     end
   end
 end
