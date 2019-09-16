@@ -17,3 +17,14 @@ end
 def reverse_array(integers)
   integers.reverse
 end  
+
+def kesha_maker(integers)
+  integers.each do |kesha|
+  kesha[2] = "$"
+end
+end  
+
+def find_a(integers)
+  
+end  
+  
