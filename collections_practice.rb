@@ -35,6 +35,11 @@ def sum_array(integers)
 end  
 
 def add_s(integers)
-  
+  integers.each_with_index.collect do |kesha, index| 
+    if index != 1
+      kesha << "s"
+    elsif index = 1
+      kesha
 end  
-  
+end
+end
