@@ -25,6 +25,16 @@ end
 end  
 
 def find_a(integers)
+  integers.select do |kesha|
+    kesha.start_with?("a")
+  end
+end  
+
+def sum_array(integers)
+  integers.inject(0) {|sum, kesha| sum + kesha}
+end  
+
+def add_s(integers)
   
 end  
   
