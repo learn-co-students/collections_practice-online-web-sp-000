@@ -55,18 +55,45 @@ def sum_array(array)
   sumArray
 end
 
+
+## more elegant than ORIGINAL - collect alreay makes a returnable array
+
 def add_s(array)
-  sArray = []
   array.each_with_index.collect do |i, j|
     if j != 1
       stringArray = i.split(//)
       stringArray.push("s")
-      sArray.push(stringArray.join)
+      stringArray.join
     else
-      sArray.push(i)
+      i
     end
   end
-  sArray
 end
 
+#ORIGINAL - Definitely ugly
+# def add_s(array)
+#   sArray = []
+#   array.each_with_index.collect do |i, j|
+#     if j != 1
+#       stringArray = i.split(//)
+#       stringArray.push("s")
+#       sArray.push(stringArray.join)
+#     else
+#       sArray.push(i)
+#     end
+#   end
+#   sArray
+# end
+
+
+#Their Solution - so pretty
+# def add_s(array)
+#   array.collect do |word|
+#     if array[1] == word
+#       word
+#     else
+#       word + "s"
+#     end
+#   end
+# end
     
