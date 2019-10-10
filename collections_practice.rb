@@ -24,9 +24,8 @@ def reverse_array(rev_arr)
 end
 
 def kesha_maker(string_arr)
- string_arr.each_with_index.replace{|element, index| "$"[3]}
-
-  end
+  string_arr.each {|item| item[2] = "$"}
+end
 
 
 def find_a(strings)
@@ -35,4 +34,14 @@ end
 
 def sum_array(array)
   array.inject(0){|sum,x| sum + x }
+end
+
+def add_s(array)
+  array.each_with_index do |item, index|
+    if index == 1
+    else
+      item << "s"
+    end
+  end
+  array
 end
