@@ -23,17 +23,11 @@ def reverse_array(rev_arr)
   rev_arr[0], rev_arr[1], rev_arr[2] = rev_arr[2], rev_arr[1], rev_arr[0]
 end
 
-# def kesha_maker(string_arr)
-#  yield (string_arr[3] = "$")
-# end
-# def my_each(array)
-#   i = 0
-#   while i < array.length
-#       yield (array[i])
-#       i = i + 1
-#   end
-#     array
-# end
+def kesha_maker(string_arr)
+ string_arr.each_with_index.replace{|element, index| "$"[3]}
+
+  end
+
 
 def find_a(strings)
   strings.select{|letter| letter.start_with?("a")}
