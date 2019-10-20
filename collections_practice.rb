@@ -74,13 +74,8 @@ end
 def add_s(array)
 
   s_array = []
-  array.each_with_index do |element, index|
-    if index != 1
-      s_array.push(element + "s")
-    else
-      s_array.push(element)
-    end
-  end
+  array.each_with_index{|element, index| index != 1 ? s_array.push(element + "s") : s_array.push(element)}
+
   return s_array
 
 end
