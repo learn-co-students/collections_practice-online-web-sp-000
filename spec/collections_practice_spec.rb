@@ -67,3 +67,9 @@ describe 'collections practice' do
     end
   end
 end
+
+describe '#swap_elements_from_to' do
+  it 'swap the slected indexes of an array' do
+    expect(swap_elements_from_to(["e", "o", "p","d"],3,0)).to eq(["d", "o", "p","e"])
+  end
+end
