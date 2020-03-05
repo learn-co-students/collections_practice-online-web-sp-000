@@ -18,3 +18,16 @@ end
 def reverse_array(integers)
 integers.reverse
 end
+
+def kesha_maker(integers)
+integers
+end
+
+def find_a(integers)
+end
+
+def sum_array(integers)
+end
+
+def add_s(integers)
+end
