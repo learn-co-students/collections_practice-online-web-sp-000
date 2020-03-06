@@ -7,12 +7,16 @@ def sort_array_desc(integers)
   integers.sort {|x, y| y <=> x }
 end
 
-def sort_array_char_count(integers)
-  integers.sort {|x, y| x.length <=> y.length }
+def sort_array_char_count(strings)
+  strings.sort {|x, y| x.length <=> y.length }
 end
 
 def swap_elements(integers)
-  
+      def swap!(a,b)
+         self[a], self[b] = self[b], self[a]
+    self
+    end
+  integers.swap!(1,2)
 end
 
 def reverse_array(integers)
