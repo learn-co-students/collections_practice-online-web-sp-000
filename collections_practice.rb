@@ -11,23 +11,23 @@ def sort_array_char_count(strings)
   strings.sort {|x, y| x.length <=> y.length }
 end
 
-def swap_elements(integers)
-      def swap!(a,b)
-         self[a], self[b] = self[b], self[a]
-    self
-    end
-  integers.swap!(1,2)
+def swap_elements(array)
+  array[1], array[2] = array[2], array[1]
+  array
 end
 
 def reverse_array(integers)
 integers.reverse
 end
 
-def kesha_maker(integers)
-integers
+def kesha_maker(array)
+  array.map {|word| word[2] = "$"}
+  array
 end
 
-def find_a(integers)
+def find_a(array)
+  array.find { |word| word[0] = "a"}
+  array
 end
 
 def sum_array(integers)
