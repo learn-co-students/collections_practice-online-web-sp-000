@@ -1,14 +1,14 @@
 require 'pry'
-def sort_array_asc(integers)
-  integers.sort
+def sort_array_asc(array)
+  array.sort
 end
 
-def sort_array_desc(integers)
-  integers.sort {|x, y| y <=> x }
+def sort_array_desc(array)
+  array.sort {|x, y| y <=> x }
 end
 
-def sort_array_char_count(strings)
-  strings.sort {|x, y| x.length <=> y.length }
+def sort_array_char_count(array)
+  array.sort {|x, y| x.length <=> y.length }
 end
 
 def swap_elements(array)
@@ -16,8 +16,8 @@ def swap_elements(array)
   array
 end
 
-def reverse_array(integers)
-integers.reverse
+def reverse_array(array)
+array.reverse
 end
 
 def kesha_maker(array)
@@ -29,9 +29,15 @@ def find_a(array)
   array.select {|word| word[0] == "a"}
 end
 
-def sum_array(integers)
-  
+def sum_array(array)
+  array.inject(0){|sum, i| sum + i}
 end
 
-def add_s(integers)
+def add_s(array)
+  array.each_with_index.collect do |element, index|
+    if index != 1
+    "#{element}s"
+    else "#{element}"
+    end
+  end
 end
