@@ -21,6 +21,7 @@ def swap_elements_from_to(arr, i, destination_i)
   temp_value = arr[i]
   arr[i] = arr[destination_i]
   arr[destination_i] = temp_value
+  arr
 end
 
 def reverse_array(arr)
