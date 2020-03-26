@@ -20,10 +20,20 @@ def sort_array_char_count(strings)
   end
 end
 
+# do the challenge here
 def swap_elements(array)
   second_val = array[1]
   array[1] = array[2]
   array[2] = second_val
+  array
+end
+
+# challenge: swap elements from 2 specified indices
+def swap_elements_from_to(array, index, destination_index)
+  store_first = array[index]
+  store_second = array[destination_index]
+  array[destination_index] = store_first
+  array[index] = store_second
   array
 end
 
