@@ -41,12 +41,9 @@ end
 
 def add_s(array)
   ar = []
-  i = 0
   array.each do |a|
-  while i != 2
   ar <<  a = a + "s"
   end
-  i += 1
-  end
-  ar
+      ar[1].chomp!('s')
+      ar
 end
