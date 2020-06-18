@@ -19,7 +19,12 @@ def sort_array_char_count(array)
 end
 
 def swap_elements(array)
-swap_elements = ["blake", "ashley", "scott"]    
-swap_elements_from_to(["a", "b", "c"],0,2) #=> ["c", "b", "a"]
-swap_elements_from_to(["a", "b", "c"],2,1) #=> ["a", "c", "b"]
+array = ["blake", "ashley", "scott"]    
+array[0], array[1], array[2] = array[0], array[2], array[1]
+
+end
+
+def reverse_array(array)
+array = [12, 4, 35]
+array[0], array[1], array[2] = array[2], array[1], array[0]
 end
