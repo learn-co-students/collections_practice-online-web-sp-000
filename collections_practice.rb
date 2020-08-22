@@ -44,9 +44,8 @@ end
 def find_a(array)
   solution = []
   array.each do |word|
-    letters_array = word.chars.to_a
-    if letters_array[0] == "a"
-      solution << letters_array.join
+    if word.start_with?("a")
+      solution << word
     else
     end
   end
@@ -54,21 +53,31 @@ def find_a(array)
 end
 
 def sum_array(array)
-  array.sum
+  array.inject(:+)
 end
 
 def add_s(array)
-  solution = []
-  index = 0
-  array.each do |name|
-    letters_array = name.chars.to_a
+  array.each_with_index.collect do |word, index|
     if index == 1
-      solution << letters_array.join
+      word
     else
-      letters_array << "s"
-      solution << letters_array.join
+      "#{word}s"
     end
-    index += 1
   end
-  solution
 end
+
+# def add_s(array)
+#   solution = []
+#   index = 0
+#   array.each do |name|
+#     letters_array = name.chars.to_a
+#     if index == 1
+#       solution << letters_array.join
+#     else
+#       letters_array << "s"
+#       solution << letters_array.join
+#     end
+#     index += 1
+#   end
+#   solution
+# end
