@@ -5,7 +5,7 @@ end
 def sort_array_desc(array)
   array.sort do |a, b|
     b <=> a
-end
+  end
 end
 
 def sort_array_char_count(array)
@@ -15,6 +15,7 @@ end
 
 def swap_elements(array)
   array[1], array[2] = array[2], array[1]
+  array
 end
 
 def reverse_array(array)
@@ -22,21 +23,21 @@ def reverse_array(array)
 end
 
 def kesha_maker(array)
-array.each do |string|
-  string[2] = "$"
-end
+  array.each do |string|
+    string[2] = "$"
+  end
 end
 
 def find_a(array)
   array.find_all do |string|
     string[0] == "a"
-end
+  end
 end
 
 def sum_array(array)
   array.inject(0) { |result, element| result + element }
 end
-# end
+
 
 def add_s(array)
   array.collect do |string|
@@ -44,5 +45,6 @@ def add_s(array)
       string
     else
       string + "s"
+    end
   end
 end
