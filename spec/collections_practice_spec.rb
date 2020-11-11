@@ -30,12 +30,19 @@ describe 'collections practice' do
     end
   end
 
+describe 'swap_elements_from_to' do
+  it 'swaps the element at a specified index to a new speciified index' do
+    expect(swap_elements_from_to(["a", "b", "c"],0,2)).to eq(["c", "b", "a"])
+  end
+end
+
   # Question 5
   describe '#reverse_array' do
     it 'reverse the order of an array of integers' do
       expect(reverse_array([12, 4, 35])).to eq([35, 4, 12])
     end
   end
+
 
   # Question 6
   describe '#kesha_maker' do
