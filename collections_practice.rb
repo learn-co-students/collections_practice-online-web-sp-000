@@ -45,13 +45,25 @@ def kesha_maker(array)
 end
 
 def find_a(array)
-
+  array.select do |i|
+      i[0] == "a"
+  end
 end
 
 def sum_array(array)
-
+  sum = 0
+  array.each do |number|
+    sum += number
+  end
+  sum
 end
 
 def add_s(array)
-
+  array.map do |name|
+      if array[1] == name
+        name
+      else
+        name + "s"
+      end
+  end
 end
