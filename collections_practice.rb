@@ -36,10 +36,8 @@ end
 
 def find_a(array)
   array.find_all do |string|
-    #first = string.slice(0,1)
     string.start_with?("a")
   end
-  #return array
 end
 
 def sum_array(numbers)
