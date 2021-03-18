@@ -41,13 +41,34 @@ end
 def swap_elements(array)
   array = ["blake", "ashley", "scott"]
   array.sort do |a,b|
-    if a > b
+    if a[1] > b[2]
       1
-    elsif a < b
+    elsif a[1] < b[2]
       -1
+    end
   end
 end
 
+def reverse_array(array)
+  array = [12, 4, 35]
+  array.reverse do |a,b|
+    a <=> b  
+  end
+end
 
+def kesha_maker(array)
+  array = ["blake", "ashley", "scott"]
+  array.each do |a|
+    array[0][2]
+      puts "$"
+    end
+end
 
+def find_a(array)
+  array = ["apple", "orange", "pear", "avis", "arlo"]
+  
+end
 
+def sum_array(array)
+  array = [11,4,7,8,9,100,134]
+end
