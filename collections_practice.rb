@@ -58,11 +58,13 @@ def reverse_array(array)
 end
 
 def kesha_maker(names)
-  names = ["blake", "ashley", "scott"]
+  kesha_array = []
   names.each do |a|
-    names[0][2]
-      puts "$"
+    a_array = a.split ""
+    a_array[2] = "$"
+    names << a_array.join
     end
+  kesha_array
 end
 
 def find_a(array)
