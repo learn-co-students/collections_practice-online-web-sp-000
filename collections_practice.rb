@@ -54,12 +54,13 @@ def reverse_array(array)
   array.reverse do |a,b|
     a <=> b  
   end
+  
 end
 
-def kesha_maker(array)
-  array = ["blake", "ashley", "scott"]
-  array.each do |a|
-    array[0][2]
+def kesha_maker(names)
+  names = ["blake", "ashley", "scott"]
+  names.each do |a|
+    names[0][2]
       puts "$"
     end
 end
