@@ -62,15 +62,14 @@ def kesha_maker(names)
   names.each do |a|
     a_array = a.split ""
     a_array[2] = "$"
-
     kesha_array << a_array.join
     end
   kesha_array
 end
 
 def find_a(array)
-  array = ["apple", "orange", "pear", "avis", "arlo"]
-  
+  find_array = ["apple", "orange", "pear", "avis", "arlo"]
+  find_array.select  {|a| find_array[0] = "a"}
 end
 
 def sum_array(array)
