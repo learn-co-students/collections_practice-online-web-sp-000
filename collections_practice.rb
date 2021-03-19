@@ -68,8 +68,11 @@ def kesha_maker(names)
 end
 
 def find_a(array)
-  find_array = ["apple", "orange", "pear", "avis", "arlo"]
-  find_array.select  {|a| find_array[0] = "a"}
+  find_array = ["apple", "orange", "pear", "avis", "arlo", "ascot"]
+  array.each do |a| 
+    find_array_new = a.split ""
+    find_array_new[0] = "a"
+  end
 end
 
 def sum_array(array)
