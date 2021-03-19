@@ -62,6 +62,7 @@ def kesha_maker(names)
   names.each do |a|
     a_array = a.split ""
     a_array[2] = "$"
+
     kesha_array << a_array.join
     end
   kesha_array
