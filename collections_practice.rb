@@ -77,7 +77,7 @@ end
 
 def add_s(array)
   s_array = []
-  array.each_with_index do |a, b|
+  array.each_with_index.collect do |a, b|
     if b == 1
       a
     else
