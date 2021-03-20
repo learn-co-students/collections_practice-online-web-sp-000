@@ -68,11 +68,7 @@ def kesha_maker(names)
 end
 
 def find_a(array)
-  find_array = ["apple", "orange", "pear", "avis", "arlo", "ascot"]
-  array.each do |a| 
-    find_array_new = a.split ""
-    find_array_new[0] = "a"
-  end
+  array.select {|a| a.start_with? "a"}
 end
 
 def sum_array(array)
