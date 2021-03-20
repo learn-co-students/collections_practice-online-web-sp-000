@@ -72,5 +72,16 @@ def find_a(array)
 end
 
 def sum_array(array)
-  array = [11,4,7,8,9,100,134]
+  array.inject {|sum, num| sum + num}
+end
+
+def add_s(array)
+  s_array = []
+  array.each_with_index do |a, b|
+    if b == 1
+      a
+    else
+      a << "s"
+    end
+  end
 end
