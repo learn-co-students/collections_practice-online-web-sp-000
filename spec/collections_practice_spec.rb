@@ -30,6 +30,13 @@ describe 'collections practice' do
     end
   end
 
+  # MINE
+    describe '#adv_swap_elements' do
+      it 'swap an given index position with another given index in an array' do
+        expect(adv_swap_elements([25, 7, 1], 0, 2)).to eq([1, 7, 25])
+      end
+    end
+
   # Question 5
   describe '#reverse_array' do
     it 'reverse the order of an array of integers' do
