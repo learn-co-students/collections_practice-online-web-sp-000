@@ -30,6 +30,13 @@ describe 'collections practice' do
     end
   end
 
+# extra credit
+  describe '#swap_elements_from_to' do
+    it 'take array index position and new index position to switch and return array' do
+      expect(swap_elements_from_to(["pie","pan","filling"], 1, 0)).to eq (["pan","pie","filling"])
+    end
+  end
+
   # Question 5
   describe '#reverse_array' do
     it 'reverse the order of an array of integers' do
