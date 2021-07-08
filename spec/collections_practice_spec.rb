@@ -28,6 +28,9 @@ describe 'collections practice' do
     it 'swap the second and third elements of an array' do
       expect(swap_elements(["blake", "ashley", "scott"])).to eq(["blake", "scott", "ashley"])
     end
+    it 'swap the first and last element of array' do
+      expect(swap_elements_from_to([1, 2, 3], 0, 2)).to eq([3, 2, 1])
+    end
   end
 
   # Question 5
